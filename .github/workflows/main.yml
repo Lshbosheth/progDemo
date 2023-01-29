@@ -5,7 +5,7 @@ on:
       - main # 这里表示push到main分支就会触发流程
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout # 定义 step 的名字，方便作日志排查
       uses: actions/checkout@v3
