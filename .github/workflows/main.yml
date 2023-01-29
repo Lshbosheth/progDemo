@@ -7,12 +7,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-20.04
     steps:
-      # 这是github官方的一个action，用于clone该仓库的源码到工作流中，
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-  
       # 连接到ssh，并且做一个拷贝操作的action
       - name: Deploy 🚀
         uses: cross-the-world/scp-pipeline@master
@@ -24,5 +18,5 @@ jobs:
          user: ${{ secrets.DR_USER }}
          pass: ${{ secrets.DR_PASS }}
          connect_timeout: 10s
-         local: '/home/runner/work/progDemo/progDemo'
+         local: './progDemo'
          remote: /home/progDemo
