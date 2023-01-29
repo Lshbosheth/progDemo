@@ -24,5 +24,5 @@ jobs:
          user: ${{ secrets.DR_USER }}
          pass: ${{ secrets.DR_PASS }}
          connect_timeout: 10s
-         local: '/home/progDemo'
+         local: '/home/runner/work/progDemo/progDemo'
          remote: /home/progDemo
