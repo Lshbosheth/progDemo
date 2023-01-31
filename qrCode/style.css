@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #1c1e26;
+    font-family: sans-serif;
+    max-width: 500px;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+}
