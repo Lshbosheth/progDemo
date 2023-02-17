@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="home.png" type="image/x-icon">
     <title>ProgDemp | Lshbosheth</title>
 </head>
 <body>
-    This is home page
+    <div onclick="goToItem('tetris')">
+        Tetris
+    </div>
+
+
+    <script>
+        const urlList = {
+            tetris: '/progDemo/tetris'
+        }
+
+        function goToItem(item) {
+            window.open(window.location + urlList[item])
+        }
+        
+    </script>
 </body>
 </html>
