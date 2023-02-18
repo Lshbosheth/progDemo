@@ -57,34 +57,25 @@
 
 
     <script>
-        window.onload = function() {
-            $.ajax({
-            url: 'http://zhongguose.com/colors.json',
-            type: 'get',
-            dataType: 'jsonp',  // 请求方式为jsonp
-            jsonpCallback: "handleCallback",    // 自定义回调函数名
-			success: function(res) {
-				console.log(res)
-			}
-        });
+        // window.onload = function() {
+        //     $.ajax({
+        //     url: 'http://zhongguose.com/colors.json',
+        //     type: 'get',
+        //     dataType: 'jsonp',  // 请求方式为jsonp
+        //     jsonpCallback: "handleCallback",    // 自定义回调函数名
+		// 	success: function(res) {
+		// 		console.log(res)
+		// 	}
+        // });
+        // }
 
-        $.ajax({
-url:"http://crossdomain.com/jsonServerResponse",
-dataType:"jsonp",
-type:"get",//可以省略
-jsonp:"callback",//->把传递函数名的那个形参callback，可省略
-success:function (data){
-console.log(data);}
-});
-        }
+        // function callback(e) {
+        //     console.log(e)
+        // }
 
-        function callback(e) {
-            console.log(e)
-        }
-
-        function handleCallback(e) {
-            console.log(e)
-        }
+        // function handleCallback(e) {
+        //     console.log(e)
+        // }
 
         function goToItem(item) {
             window.location.href = window.location.origin + '/progDemo/' + item
